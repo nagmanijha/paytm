@@ -12,3 +12,8 @@ export const SignUpSchema = z.object({
 	password: z.string()
 })
 
+export const UpdateSchema = z.object({
+    password: zod.string().optional(),
+    firstName: zod.string().optional(),
+    lastName: zod.string().optional()
+})
